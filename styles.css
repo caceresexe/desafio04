@@ -1,0 +1,291 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto Slab', serif;
+    box-sizing: border-box;
+    
+}
+
+/* Selectores globales */
+body {
+    background-color: black;
+   
+}
+header {
+    width: 100%;
+    height: 130px;
+    background-color: #2A0D12;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+   
+}
+nav ul li {
+    list-style: none;
+    display: inline-flex;
+    margin: 0 30px;
+    position: relative;
+
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.2rem;
+}
+nav ul li::before {
+    content: "";
+    height: 3px;
+    width: 0%;
+    background: #E79411;
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    transition: 0.4s ease-out;
+}
+nav ul li:hover::before {
+    width: 100%;
+
+}
+footer{
+    width: 100%;
+    background-size:none;
+    background-color: #2A0D12;
+
+}
+
+
+.logo {
+        width: 130px;
+        cursor: pointer;
+} 
+.container-hero{
+    padding:10px 0px;
+    width: 100%;
+    position: relative; 
+}
+.hero{
+    width: 100%; height: 100%;
+    background: url("./assets/tablecoffee.jpg");
+    background-attachment: fixed;
+}
+.content{
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,11,0.6);
+}
+.content .info{
+    width: 100%;
+    max-width: 750px;
+    text-align: center;
+}
+.content .info h1{
+    color: #fff;
+    font-size: 50px;
+    font-family: 'Roboto Slab', serif;
+    text-shadow: 0px 1px 10px rgba(0,0,0,0.4);
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
+.content .info a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 19px;
+    padding: 10px 25px;
+    color: #fff;
+    background: #E79411;
+    border-radius: 50px;
+    margin-bottom: 40px;
+    border: 2px solid transparent;
+    transition: all 300ms ease;
+    letter-spacing: 0.5px; 
+}
+.content .info a:hover{
+    background: transparent; 
+    border: 2px solid #fff;
+}
+
+.container-article{
+    padding:10px 0px;
+    width: 100%;
+    position: relative;
+}
+.article{
+    width: 100%; height: 100%;
+    background: url("./assets/backgroundbar.jpg");
+    background-attachment: fixed;
+}
+.content2{
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,11,0.6);
+}
+.content2 .info2{
+    width: 100%;
+    max-width: 750px;
+    text-align: center;
+}
+.content2 .info2 h1{
+    color: #fff;
+    font-size: 50px;
+    font-family: 'Roboto Slab', serif;
+    text-shadow: 0px 1px 10px rgba(0,0,0,0.4);
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
+.content2 .info2 p {
+    color: #fff;
+    font-size: 30px;
+
+}
+
+.card-title {
+    color: #fff;
+    font-size: 22px;
+    font-family: 'Roboto Slab', serif;
+    text-shadow: 0px 1px 10px rgba(0,0,0,0.4);
+    width: 100%;
+	max-width: 1080px;
+	margin: auto;
+	padding: 20px;
+	margin-top: 20px;
+	text-align: center;
+}
+.container-card{
+	width: 100%;
+	display: flex;
+	max-width: 1100px;
+	margin: auto;
+    padding: auto;
+    
+}
+
+
+.title-cards{
+	width: 100%;
+	max-width: 1080px;
+	margin: auto;
+	padding: 20px;
+	margin-top: 20px;
+	text-align: center;
+	color: #000000;
+}
+.card{
+	width: 100%;
+	margin: 20px;
+	border-radius: 6px;
+	overflow: hidden;
+	background:#fff;
+	box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+	transition: all 400ms ease-out;
+	cursor: default;
+}
+.card:hover{
+	box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+	transform: translateY(-3%);
+}
+.card img{
+	width: 100%;
+	height: 210px;
+}
+.card .contenido-card{
+	padding: 15px;
+	text-align: center;
+}
+.card .contenido-card h3{
+	margin-bottom: 15px;
+	color: #000000;
+}
+.card .contenido-card p{
+	line-height: 1.8;
+	color: #000000;
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+.card .contenido-card a{
+	display: inline-block;
+	padding: 10px;
+	margin-top: 10px;
+	text-decoration: none;
+	color: #E79411;
+	border: 1px solid #E79411;
+	border-radius: 50px;
+	transition: all 400ms ease;
+	margin-bottom: 5px;
+}
+.card .contenido-card a:hover{
+	background: #E79411;
+	color: #fff;
+}
+
+.container-footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    margin:auto;
+  }
+
+.box-footer{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.box-footer h2{
+    margin-bottom: 30px;
+    color: #fff;
+    font-weight: 700;
+}
+.box-footer li {
+    list-style: none;
+    color: #E79411;
+    font-family: 'Roboto Slab', serif;
+    font-size: 15px;
+    line-height: 1.5;
+
+}
+.box-footer a{
+    color: #E79411;
+    font-weight: 600;
+}
+
+.box-footer a:hover{
+    opacity: 0.8;
+}
+
+.box-copyright{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    font-size: 15px;
+}
+
+.box-copyright p{
+    margin-top: 5px;
+    color: #E79411;
+ 
+}
+
+.box-copyright hr{
+    border: none;
+    height: 1px;
+    background-color:#E79411;
+}
+
+
